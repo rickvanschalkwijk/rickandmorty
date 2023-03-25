@@ -1,0 +1,33 @@
+{
+  "name": "rickandmorty",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install",
+    "release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matheusaraujo/rickandmorty.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matheusaraujo/rickandmorty/issues"
+  },
+  "homepage": "https://github.com/matheusaraujo/rickandmorty#readme",
+  "devDependencies": {
+    "@commitlint/config-conventional": "^17.4.4",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^8.0.7",
+    "@semantic-release/npm": "^10.0.2",
+    "@semantic-release/release-notes-generator": "^10.0.3",
+    "commitlint": "^17.5.0",
+    "husky": "^8.0.3",
+    "semantic-release": "^21.0.0"
+  }
+}
