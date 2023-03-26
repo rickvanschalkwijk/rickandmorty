@@ -1,3 +1,4 @@
+using RickAndMorty.ConsoleApplication.Extensions;
 using RickAndMorty.ConsoleApplication.Models;
 using RickAndMorty.Database.Interface;
 using RickAndMorty.Database.Interface.Models;
@@ -19,7 +20,7 @@ public sealed class Service
 
     public async Task Run() 
     {
-        repository.Initialize();
+        repository.CreateDatabase();
 
         Console.WriteLine($"First page");
         var result = await client.Get(1);

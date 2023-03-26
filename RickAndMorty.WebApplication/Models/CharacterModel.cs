@@ -1,14 +1,13 @@
-namespace RickAndMorty.Database.Interface.Models;
+namespace RickAndMorty.WebApplication.Models;
 
-public sealed record class Character
+public class CharacterModel
 {
-    public int Id { get; set; }
     public string? Name { get; set; }
+
     public string? Species { get; set; }
     public string? Type { get; set; }
     public string? Gender { get; set; }
     public string? Origin { get; set; }
     public string? Location { get; set; }
-    public ICollection<Episode>? Episode { get; set; }
-    public DateTime Created { get; set; }
+
 }

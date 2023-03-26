@@ -4,6 +4,8 @@ namespace RickAndMorty.Database.Interface;
 
 public interface IRepository
 {
-    void Initialize();
+    void InitializeDatabase();
+    void CreateDatabase();
     void Save(IList<Character> characters);
+    IList<Character> GetAll();
 }

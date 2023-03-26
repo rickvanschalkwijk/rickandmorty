@@ -1,5 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
+  <ItemGroup>
+    <ProjectReference Include="..\RickAndMorty.Database.Interface\RickAndMorty.Database.Interface.csproj" />
+    <ProjectReference Include="..\RickAndMorty.Database\RickAndMorty.Database.csproj" />
+  </ItemGroup>
+
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>

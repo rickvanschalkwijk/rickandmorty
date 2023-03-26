@@ -1,3 +1,4 @@
+using RickAndMorty.ConsoleApplication.Extensions;
 using RickAndMorty.ConsoleApplication.Models;
 
 namespace RickAndMorty.ConsoleApplication.Tests.Extensions;
@@ -29,7 +30,6 @@ public class MapperTest
 
         Assert.Equal(1, entity.Id);
         Assert.Equal("name", entity.Name);
-        Assert.Equal("status", entity.Status);
         Assert.Equal("species", entity.Species);
         Assert.Equal("type", entity.Type);
         Assert.Equal("gender", entity.Gender);
@@ -62,7 +62,6 @@ public class MapperTest
 
         Assert.Equal(1, entity.Id);
         Assert.Equal("name", entity.Name);
-        Assert.Equal("status", entity.Status);
         Assert.Equal("species", entity.Species);
         Assert.Equal("type", entity.Type);
         Assert.Equal("gender", entity.Gender);

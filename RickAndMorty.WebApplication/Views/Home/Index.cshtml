@@ -1,8 +1,37 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+
+    var characters = ViewData["Characters"] as RickAndMorty.WebApplication.Models.CharacterModel[] ?? 
+        Array.Empty<RickAndMorty.WebApplication.Models.CharacterModel>();
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div>
+    @foreach (var character in characters)
+    {
+        <div class="character-box">
+            <div>
+                <strong>Name:</strong> @character.Name
+            </div>
+            
+            <div>
+                <strong>Species:</strong> @character.Species
+            </div>
+            
+            <div>
+                <strong>Type:</strong> @character.Type
+            </div>
+            
+            <div>
+                <strong>Gender:</strong> @character.Gender
+            </div>
+            
+            <div>
+                <strong>Origin:</strong> @character.Origin
+            </div>
+            
+            <div>
+                <strong>Location:</strong> @character.Location 
+            </div>
+        </div>
+    }
 </div>

@@ -12,10 +12,23 @@ public class Repository : IRepository
         db.SaveChanges();
     }
 
-    public void Initialize() 
+    public void CreateDatabase() 
     {
         var db = new ApplicationDbContext();
         db.Database.EnsureDeleted();
         db.Database.EnsureCreated();
+    }
+
+    public void InitializeDatabase() 
+    {
+        var db = new ApplicationDbContext();
+        db.Database.EnsureCreated();
+    }
+
+    public IList<Character> GetAll()
+    {
+        var db = new ApplicationDbContext();
+        var x = db.Characters.ToList();
+        return x;
     }
 }

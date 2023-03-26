@@ -1,9 +1,9 @@
 using RickAndMorty.ConsoleApplication.Models;
 using RickAndMorty.Database.Interface.Models;
 
-namespace RickAndMorty.ConsoleApplication;
+namespace RickAndMorty.ConsoleApplication.Extensions;
 
-public static class Mapper 
+public static class Mapper
 {
     public static Character Map(this CharacterDto dto)
     {
@@ -11,7 +11,6 @@ public static class Mapper
         {
             Id = dto.Id,
             Name = dto.Name,
-            Status = dto.Status,
             Species = dto.Species,
             Type = dto.Type,
             Gender = dto.Gender,
