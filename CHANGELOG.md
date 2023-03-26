@@ -1,3 +1,10 @@
+## [1.3.0](https://github.com/matheusaraujo/rickandmorty/compare/v1.2.0...v1.3.0) (2023-03-26)
+
+
+### Features
+
+* [#8](https://github.com/matheusaraujo/rickandmorty/issues/8) add new character ([#11](https://github.com/matheusaraujo/rickandmorty/issues/11)) ([9fc3e70](https://github.com/matheusaraujo/rickandmorty/commit/9fc3e7003ac1465928f996fe16aec951bd56247f))
+
 ## [1.2.0](https://github.com/matheusaraujo/rickandmorty/compare/v1.1.0...v1.2.0) (2023-03-26)
 
 
