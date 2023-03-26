@@ -1,3 +1,10 @@
+## [1.2.0](https://github.com/matheusaraujo/rickandmorty/compare/v1.1.0...v1.2.0) (2023-03-26)
+
+
+### Features
+
+* [#7](https://github.com/matheusaraujo/rickandmorty/issues/7) view listing all characters ([#10](https://github.com/matheusaraujo/rickandmorty/issues/10)) ([e1b0a92](https://github.com/matheusaraujo/rickandmorty/commit/e1b0a92c81acdb33e6b700cde4c04bc0e61c3860))
+
 ## [1.1.0](https://github.com/matheusaraujo/rickandmorty/compare/v1.0.0...v1.1.0) (2023-03-26)
 
 
