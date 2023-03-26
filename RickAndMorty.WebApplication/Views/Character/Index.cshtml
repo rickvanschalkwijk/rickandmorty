@@ -1,0 +1,43 @@
+@model RickAndMorty.WebApplication.Models.CharacterModel
+
+@{
+    ViewData["Title"] = "Add new character";
+}
+
+<form method="post" enctype="multipart/form-data" asp-controller="Character" asp-action="Index">
+    <div class="input-character">
+        <div>
+            <strong>Name:</strong>
+            @Html.TextBoxFor(c => c.Name)
+        </div>
+        
+        <div>
+            <strong>Species:</strong>
+            @Html.TextBoxFor(c => c.Species)
+        </div>
+        
+        <div>
+            <strong>Type:</strong>
+            @Html.TextBoxFor(c => c.Type)
+        </div>
+        
+        <div>
+            <strong>Gender:</strong>
+            @Html.TextBoxFor(c => c.Gender)
+        </div>
+        
+        <div>
+            <strong>Origin:</strong>
+            @Html.TextBoxFor(c => c.Origin)
+        </div>
+        
+        <div>
+            <strong>Location:</strong>
+            @Html.TextBoxFor(c => c.Location)
+        </div>
+
+        <div>
+            <input type="submit" value="Submit"/>
+        </div>
+    </div>
+</form>

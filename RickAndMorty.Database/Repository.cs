@@ -12,6 +12,13 @@ public class Repository : IRepository
         db.SaveChanges();
     }
 
+    public void Save(Character character)
+    {
+        var db = new ApplicationDbContext();
+        db.Characters.Add(character);
+        db.SaveChanges();
+    }
+
     public void CreateDatabase() 
     {
         var db = new ApplicationDbContext();

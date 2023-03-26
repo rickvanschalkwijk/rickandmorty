@@ -17,11 +17,4 @@ internal class ApplicationDbContext: DbContext
         base.OnConfiguring(optionsBuilder);
         optionsBuilder.UseSqlServer(ConnectionString);
     }
-
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
-    {
-         modelBuilder.Entity<Character>()
-            .Property(d => d.Id)
-            .ValueGeneratedNever();
-    }
 }

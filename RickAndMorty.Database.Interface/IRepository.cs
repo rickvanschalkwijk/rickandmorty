@@ -7,5 +7,6 @@ public interface IRepository
     void InitializeDatabase();
     void CreateDatabase();
     void Save(IList<Character> characters);
+    void Save(Character characters);
     IList<Character> GetAll();
 }

@@ -9,7 +9,6 @@ public static class Mapper
     {
         return new Character() 
         {
-            Id = dto.Id,
             Name = dto.Name,
             Species = dto.Species,
             Type = dto.Type,

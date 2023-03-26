@@ -23,4 +23,17 @@ public static class Mapper
         return entities.ToList().ConvertAll(e => e.Map()).ToArray();
     }
 
+    public static Character Map(this CharacterModel model)
+    {
+        return new Character()
+        {
+            Name = model.Name,
+            Species = model.Species,
+            Type = model.Type,
+            Gender = model.Gender,
+            Origin = model.Origin,
+            Location = model.Location
+        };
+    }
+
 }

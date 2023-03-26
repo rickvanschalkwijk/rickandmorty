@@ -28,7 +28,6 @@ public class MapperTest
 
         var entity = dto.Map();
 
-        Assert.Equal(1, entity.Id);
         Assert.Equal("name", entity.Name);
         Assert.Equal("species", entity.Species);
         Assert.Equal("type", entity.Type);
@@ -60,7 +59,6 @@ public class MapperTest
 
         var entity = dto.Map();
 
-        Assert.Equal(1, entity.Id);
         Assert.Equal("name", entity.Name);
         Assert.Equal("species", entity.Species);
         Assert.Equal("type", entity.Type);

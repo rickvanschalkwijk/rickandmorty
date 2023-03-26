@@ -9,5 +9,4 @@ public class CharacterModel
     public string? Gender { get; set; }
     public string? Origin { get; set; }
     public string? Location { get; set; }
-
 }
